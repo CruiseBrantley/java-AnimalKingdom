@@ -6,6 +6,9 @@ public abstract class AbstractAnimal
     private int id;
     private String name;
     private int yearNamed;
+    private String move;
+    private String breathe;
+    private String reproduce;
 
     AbstractAnimal(String name, int yearNamed)
     {
@@ -16,12 +19,37 @@ public abstract class AbstractAnimal
         this.yearNamed = yearNamed;
     }
 
-    public int getID()
+    String getMove()
     {
-        return id;
+        return move;
     }
 
-    public String getName()
+    public void setMove(String move)
+    {
+        this.move = move;
+    }
+
+    public String getBreathe()
+    {
+        return breathe;
+    }
+
+    public void setBreathe(String breathe)
+    {
+        this.breathe = breathe;
+    }
+
+    public String getReproduce()
+    {
+        return reproduce;
+    }
+
+    public void setReproduce(String reproduce)
+    {
+        this.reproduce = reproduce;
+    }
+
+    String getName()
     {
         return name;
     }
@@ -31,7 +59,7 @@ public abstract class AbstractAnimal
         this.name = name;
     }
 
-    public int getYearNamed()
+    int getYearNamed()
     {
         return yearNamed;
     }
@@ -41,7 +69,7 @@ public abstract class AbstractAnimal
         this.yearNamed = yearNamed;
     }
 
-    public int getId()
+    int getId()
     {
         return id;
     }

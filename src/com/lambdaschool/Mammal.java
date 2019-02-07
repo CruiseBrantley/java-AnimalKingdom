@@ -2,11 +2,23 @@ package com.lambdaschool;
 
 public class Mammal extends AbstractAnimal
 {
-    private String move = "walk";
-    private String breathe = "lungs";
-    private String reproduce = "live births";
-    public Mammal(String name, int yearNamed)
+    Mammal(String name, int yearNamed)
     {
         super(name, yearNamed);
+        setMove("walk");
+        setBreathe("lungs");
+        setReproduce("live births");
+    }
+    @Override
+    public String toString()
+    {
+        return "Mammal{" +
+                "move='" + getMove() + '\'' +
+                ", breathe='" + getBreathe() + '\'' +
+                ", reproduce='" + getReproduce() + '\'' +
+                ", name='" + getName() + '\'' +
+                ", yearNamed='" + getYearNamed() + '\'' +
+                ", id='" + getId() + '\'' +
+                '}';
     }
 }
